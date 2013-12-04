@@ -1,5 +1,5 @@
 {
-  "name": "substitute",
+  "name": "untokenize",
   "version": "0.1.0",
   "description": "A very, very simple template engine for simple uses.",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:hgarcia/substitute.git"
+    "url": "git@github.com:hgarcia/untokenize.git"
   },
   "keywords": [
     "template",
@@ -20,7 +20,7 @@
   "author": "Hernan Garcia <hernan@dynamicprogrammer.com> (http://dynamicprogrammer.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hgarcia/substitute/issues"
+    "url": "https://github.com/hgarcia/untokenize/issues"
   },
   "devDependencies": {
     "mocha": "1.15.1",

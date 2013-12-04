@@ -1,1 +1,1 @@
-module.exports = require("./src/substitute");
+module.exports = require("./src/untokenize");

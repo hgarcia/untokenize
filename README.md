@@ -1,4 +1,4 @@
-substitute
+untokenize
 ==========
 
 A super simple template for node, to use in simple apps and libraries
@@ -13,16 +13,16 @@ This library is mostly to template short strings or small paragraphs.
 
 ### Install
 
-`npm install substitute`
+`npm install untokenize`
 
 
 ### Usage
 
-Create a substitute calling create.
+Create a untokenize calling create.
 
 <pre><code>
 
-    var substitute = require('substitute').create();
+    var untokenize = require('untokenize').create();
 
 </code></pre>
 
@@ -30,7 +30,7 @@ Replace tokens in code given values as an object literal (or hash) where the tok
 
 <pre><code>
 
-    substitute.render("The fox jumped over the {{barrier}}", {barrier: "fence"});
+    untokenize.render("The fox jumped over the {{barrier}}", {barrier: "fence"});
     //The fox jumped over the fence.
 
 </code></pre>
@@ -39,7 +39,7 @@ You can also use positional tokens and use an array to pass the values.
 
 <pre><code>
 
-    substitute.render("The {{1}} jumped over the {{0}}", ["fence", "fox"]);
+    untokenize.render("The {{1}} jumped over the {{0}}", ["fence", "fox"]);
     //The fox jumped over the fence.
 
 </code></pre>
@@ -48,14 +48,14 @@ Replaces are globals so you can use the token or position multiple times in the 
 
 ### Customizations
 
-There is only one customization, but should be used with care. You can replace the token delimiters when creating a new substitute.
+There is only one customization, but should be used with care. You can replace the token delimiters when creating a new untokenize.
 
 Be careful, some characters may not work well as delimiters, so try and test before settling on a new set.
 
 <pre><code>
 
-    var substitute = require('substitute').create({startToken: '<%', endToken: '%>'});
-    substitute.render("Using the new <%name%>", {name: "tokens"});
+    var untokenize = require('untokenize').create({startToken: '<%', endToken: '%>'});
+    untokenize.render("Using the new <%name%>", {name: "tokens"});
     //Using the new tokens
 
 </code></pre>
