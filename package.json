@@ -1,0 +1,29 @@
+{
+  "name": "substitute",
+  "version": "0.1.0",
+  "description": "A very, very simple template engine for simple uses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec",
+    "test-w": "mocha -w -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hgarcia/substitute.git"
+  },
+  "keywords": [
+    "template",
+    "simple",
+    "compact",
+    "lightweight"
+  ],
+  "author": "Hernan Garcia <hernan@dynamicprogrammer.com> (http://dynamicprogrammer.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hgarcia/substitute/issues"
+  },
+  "devDependencies": {
+    "mocha": "1.15.1",
+    "should": "2.1.0"
+  }
+}
