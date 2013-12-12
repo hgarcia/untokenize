@@ -37,6 +37,22 @@ describe('untokenize', function() {
     });
   });
 
+
+  describe('.render("str", {value: {another: } })', function () {
+
+    var s = untokenize.create();
+
+    it('should interpolate the nested value', function () {
+      var result = s.render("String with {{token.message}}", {token: {message: "a nested message"}});
+      result.should.equal("String with a nested message");
+    });
+
+    it('should replace all occurrences', function () {
+      var result = s.render("String {{token.message}} with {{token.message}}", {token: {message: "a nested message"}});
+      result.should.equal("String a nested message with a nested message");
+    });
+  });
+
   describe('.render("str", [values])', function () {
 
     var s = untokenize.create();
