@@ -1,6 +1,8 @@
 untokenize
 ==========
 
+[![Build Status](https://travis-ci.org/hgarcia/untokenize.png?branch=master)](https://travis-ci.org/hgarcia/untokenize)
+
 A super simple template for node, to use in simple apps and libraries
 
 ### Changelog
